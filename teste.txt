@@ -1,3 +1,6 @@
 Testando Editor vim
 
 Aprendendo comandos básicos do Git
+
+Aprendendo a ver os logs e commits
+
