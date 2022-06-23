@@ -1,0 +1,10 @@
+Sair do modo de inserção de texto - esc
+
+Inserir texto - i
+
+Iniciar comando - :
+
+	w - escrever e salvar
+	q - sair
+
+	ex: $ wq (Escreve, salva e sai)
