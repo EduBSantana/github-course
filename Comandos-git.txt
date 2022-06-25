@@ -75,6 +75,20 @@ $ cat [nome-arquivo.pub]
 $ more [nome-arquivo.pub]
 $ vim [nome-arquivo.pub]
 
+(Criar novo branch e entra no mesmo)
+$ git checkout -b [nome-branch]
+
+(Mostra branchs existentes e em qual estamos)
+$ git branch
+
+(Muda de branch)
+$ git checkout [nome-branch]
+
+(Deleta branch)
+$ git branch -D [nome-branch]
+
+
+
 --------------- Conectando Repositório local a um remoto ---------------
 
 (Adciona repositório remoto)
@@ -88,3 +102,9 @@ $ git remote
 
 (Envia arquivos, modificações e logs para o repositório remoto)
 $ git push -u origin master
+
+(Clona repositório remoto para máquina local)
+$ git clone [endereco-repositorio-github] [nome]
+
+
+
