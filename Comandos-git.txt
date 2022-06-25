@@ -1,0 +1,90 @@
+(Cria pasta no diretório atual)
+$ mkdir [nome-pasta]
+
+(Configura nome de usuário)
+$ git config --global user.name "[nome]"
+
+(Configura email)
+$ git config --global user.email "[email]"
+
+(Configura editor (VIM vem por padrão) )
+$ git config --global core.editor [editor]
+
+(Exibe valor de alguma chave)
+$ git config [chave]
+
+(Iniciar repositório)
+$ git init
+
+(Editar arquivo (com VIM) )
+$ vim [nome-arquivo]
+
+(Reportar como está o repositório no momento)
+$ git status
+
+(Adicionar arquivos na stage)
+$ git add [nome-arquivo]
+
+(Commitar (Fechar uma nova versão) )
+$ git commit -m "[mensagem]"
+
+(Ver logs (Commmits) )
+$ git log
+
+	(Filtrar por autor)
+	$ git log --author="[nome]"
+
+(Ver logs de forma mais simples)
+$ git shortlog
+
+	(Mostrar apenas o nome e quantidade de commits)
+	$ git shortlog -sn
+
+(Mostrar de forma gráfica o que está acontecendo com os brands)
+$ git log --graph
+
+(Mostrar o que foi feito no commit pelo hash)
+$ git show [hash]
+
+(Mostrar alterações antes de commitar)
+$ git diff
+
+(Mostrar apenas o nome dos arquivos que foram modificados)
+$ git diff --name-only
+
+(Adicionar na área de stage e commitar)
+$ git commit -am "[mensagem]"
+
+(Retornar arquivo para antes da edição)
+$ git checkout [nome-arquivo]
+
+(Retirar arquivo da área de stage)
+$ git reset HEAD [nome-arquivo]
+
+(Retira commit e deixa arquivos na área de stage)
+$ git reset --soft [hash-anterior]
+
+(Retira commit e volta os arquivos para o estado de modified)
+$ git reset --mixed [hash-anterior]
+
+(Retira commit e tudo o que foi feito nele)
+$ git reset --hard [hash-anterior]
+
+(Mostra chave SSH pública)
+$ cat [nome-arquivo.pub]
+$ more [nome-arquivo.pub]
+$ vim [nome-arquivo.pub]
+
+--------------- Conectando Repositório local a um remoto ---------------
+
+(Adciona repositório remoto)
+$ git remote add origin [endereco-do-repositorio-remoto-no-github]
+
+(Verifica repositório remoto)
+$ git remote
+
+	(Mostra mais informações sobre)
+	$ git remote -v
+
+(Envia arquivos, modificações e logs para o repositório remoto)
+$ git push -u origin master
