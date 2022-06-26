@@ -87,6 +87,9 @@ $ git checkout [nome-branch]
 (Deleta branch)
 $ git branch -D [nome-branch]
 
+(Faz um Merge)
+$ git merge [nome-branch]
+
 
 
 --------------- Conectando Repositório local a um remoto ---------------
