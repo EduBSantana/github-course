@@ -13,11 +13,17 @@ $ git config --global core.editor [editor]
 (Exibe valor de alguma chave)
 $ git config [chave]
 
+(Configura Alias)
+$ git config --global alias.[tecla-atalho] [nome-comando]
+
 (Iniciar repositório)
 $ git init
 
 (Editar arquivo (com VIM) )
 $ vim [nome-arquivo]
+
+(Criar .gitignore)
+$ vi .gitignore
 
 (Reportar como está o repositório no momento)
 $ git status
@@ -87,15 +93,44 @@ $ git checkout [nome-branch]
 (Deleta branch)
 $ git branch -D [nome-branch]
 
+(Deleta branch do repositório remoto)
+git push origin master :[branch]
+
 (Faz um Merge)
 $ git merge [nome-branch]
-<<<<<<< HEAD
-=======
-
->>>>>>> 75377c6ca0b33f99cfddad33b52b165181a32128
 
 (Faz um Rebase)
 $ gir rebase [nome-branch]
+
+(Guarda arquivos modificados para commitar depois (Limpa a branch) )
+$ git stash
+
+(Aplica stash e arquivos guardados voltam para modified na branch)
+$ git stash apply
+
+(Mostra lista de stash)
+$ git stash list
+
+(Limpa tudo que está no stash)
+$ git stash clear
+
+(Cria uma tag)
+$ git tag -a [versao] -m "[mensagem]"
+
+(Apaga tag do repositório local)
+$ git tag -d [versao]
+
+(Apaga tag do repositório remoto)
+$ git push origin :[versao]
+
+(Envia tags para o repositório remoto)
+$ git push origin master --tags
+
+(Ver tags geradas)
+$ git tags
+
+(Desfaz alterações do commit sem apagá-lo)
+$ git revert [hash-commit-errado]
 
 --------------- Conectando Repositório local a um remoto ---------------
 
@@ -113,6 +148,4 @@ $ git push -u origin master
 
 (Clona repositório remoto para máquina local)
 $ git clone [endereco-repositorio-github] [nome]
-
-
 
