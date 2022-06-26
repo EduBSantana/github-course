@@ -89,6 +89,10 @@ $ git branch -D [nome-branch]
 
 (Faz um Merge)
 $ git merge [nome-branch]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 75377c6ca0b33f99cfddad33b52b165181a32128
 
 (Faz um Rebase)
 $ gir rebase [nome-branch]
